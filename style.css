@@ -1,0 +1,145 @@
+/* Resetting styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+/* Styling calculator container */
+.calculator {
+    width: 360px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Display area for the calculator */
+.display {
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button container layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Default styling for all buttons */
+button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover and active states for buttons */
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button:active {
+    background-color: #ccc;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Special buttons for operators and functions */
+button:nth-child(4), button:nth-child(8), button:nth-child(12) {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:nth-child(4):hover, button:nth-child(8):hover, button:nth-child(12):hover {
+    background-color: #45a049;
+}
+
+button:nth-child(4):active, button:nth-child(8):active, button:nth-child(12):active {
+    background-color: #388e3c;
+}
+
+/* Delete button styling */
+button:nth-child(16) {
+    background-color: #FF5722;  /* Red color for delete */
+    color: white;
+    font-size: 1.5rem;  /* Minimal size for delete button */
+}
+
+button:nth-child(16):hover {
+    background-color: #e64a19;
+}
+
+button:nth-child(16):active {
+    background-color: #d32f2f;
+}
+
+/* Equal button styling */
+button:nth-child(17) {
+    background-color: #007BFF;
+    color: white;
+}
+
+button:nth-child(17):hover {
+    background-color: #0056b3;
+}
+
+button:nth-child(17):active {
+    background-color: #004494;
+}
+
+/* Styling for operators +, -, *, / */
+button:nth-child(18), button:nth-child(19), button:nth-child(20), button:nth-child(21) {
+    background-color: #FF9800;  /* Orange for operators */
+    color: white;
+}
+
+button:nth-child(18):hover, button:nth-child(19):hover, button:nth-child(20):hover, button:nth-child(21):hover {
+    background-color: #f57c00;
+}
+
+button:nth-child(18):active, button:nth-child(19):active, button:nth-child(20):active, button:nth-child(21):active {
+    background-color: #e65100;
+}
+
+/* Styling for the Deg button */
+button:nth-child(22) {
+    background-color: #FF4081;  /* Pink color for Deg */
+    color: white;
+}
+
+button:nth-child(22):hover {
+    background-color: #f50057;
+}
+
+button:nth-child(22):active {
+    background-color: #c51162;
+}
